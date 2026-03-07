@@ -1,0 +1,145 @@
+.profit-section {
+    background-color: #F5F5F5;
+    padding: 60px 8%;
+}
+
+.profit-section .section-title h2 {
+    margin-bottom: 20px;
+}
+
+.profit-main-card {
+    background: white;
+    border-radius: 24px;
+    padding: 60px 80px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: fit-content;
+    padding: 30px;
+}
+
+.profit-cloud-icon {
+    width: 180px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.profit-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.profit-main-text {
+    font-size: 1.25rem;
+    color: #2B2B2B;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.profit-main-button {
+    background: linear-gradient(90deg, #FDA000 0%, #FF5714 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 14px 36px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: default;
+    align-self: flex-start;
+}
+
+.profit-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.profit-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.profit-card-badge {
+    background: linear-gradient(90deg, #FDA000 0%, #FF5714 100%);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.profit-card-value {
+    font-size: 1.5rem;
+    color: #2B2B2B;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .profit-cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profit-main-card {
+        flex-direction: column;
+        padding: 50px 40px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .profit-cloud-icon {
+        width: 140px;
+    }
+
+    .profit-main-text {
+        font-size: 1.1rem;
+    }
+
+    .profit-main-button {
+        align-self: center;
+    }
+
+    .profit-card-value {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profit-section {
+        padding: 40px 5%;
+    }
+
+    .profit-main-card {
+        padding: 30px 20px;
+    }
+
+    .profit-main-text {
+        font-size: 1rem;
+    }
+
+    .profit-main-button {
+        font-size: 0.9rem;
+        padding: 10px 24px;
+    }
+
+    .profit-cloud-icon {
+        width: 80px;
+    }
+}

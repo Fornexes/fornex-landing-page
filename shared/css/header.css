@@ -43,6 +43,10 @@
     justify-content: end;
 }
 
+.navbar-nav {
+    gap: 30px;
+}
+
 .nav-link {
     color: white !important;
 }
@@ -87,6 +91,12 @@
     opacity: 0.9;
 }
 
+.early-access-text {
+    font-size: 16px;
+    margin-bottom: 15px !important;
+    font-weight: 600;
+}
+
 /* BOTÕES */
 
 .buttons {
@@ -98,16 +108,21 @@
 .btn-primary {
     background: #FF5714;
     border: none;
-    padding: 5px 30px !important;
+    padding: 12px 30px !important;
     border-radius: 20px;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
-
+    text-decoration: none !important;
+    display: inline-block;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:visited {
     background: #94320c;
+    color: white;
+    text-decoration: none !important;
 }
 
 .btn-outline {

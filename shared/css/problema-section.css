@@ -1,0 +1,207 @@
+.problema-section {
+    margin: 40px 0;
+    padding: 0 8%;
+}
+
+.problema-container {
+    background: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    height: 352px;
+    overflow: hidden;
+}
+
+.problema-content {
+    flex: 1;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.problema-badge {
+    background: #FF5714;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    width: fit-content;
+}
+
+.problema-titulo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.problema-texto {
+    font-size: 16px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.problema-imagem {
+    flex: 1;
+    min-width: 40%;
+    background-image: url('../imgs/problema-section/loja-fantasma.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 352px;
+}
+
+.problema-imagem img {
+    display: none;
+}
+
+.problema-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.problema-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 24px 32px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+}
+
+.problema-card-icone {
+    font-size: 48px;
+    color: #FF5714;
+    margin-bottom: 24px;
+}
+
+.problema-card-titulo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.problema-card-descricao {
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: auto;
+    flex: 1;
+}
+
+.problema-card-fonte {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+    .problema-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 500px;
+    }
+
+    .problema-content {
+        padding: 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .problema-titulo {
+        font-size: 24px;
+    }
+
+    .problema-imagem {
+        min-height: 300px;
+    }
+
+    .problema-cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+    }
+
+    .problema-card {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .problema-section {
+        padding: 0 16px;
+        margin: 40px 0;
+    }
+
+    .problema-container {
+        min-height: 450px;
+    }
+
+    .problema-content {
+        padding: 30px 24px;
+    }
+
+    .problema-titulo {
+        font-size: 22px;
+    }
+
+    .problema-texto {
+        font-size: 14px;
+    }
+
+    .problema-badge {
+        font-size: 11px;
+        padding: 6px 16px;
+    }
+
+    .problema-imagem {
+        min-height: 250px;
+    }
+
+    .problema-cards {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .problema-card {
+        min-height: auto;
+        padding: 32px 20px 24px;
+    }
+
+    .problema-card-icone {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .problema-card-titulo {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .problema-card-descricao {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .problema-card-fonte {
+        font-size: 11px;
+    }
+}

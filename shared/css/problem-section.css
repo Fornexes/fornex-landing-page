@@ -1,6 +1,5 @@
 .problem-section {
-    margin: 40px 0;
-    padding: 0 8%;
+    padding: 60px 8%;
 }
 
 .problem-container {
@@ -137,7 +136,7 @@
 
     .problem-cards {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 50px;
+        margin-top: 0;
     }
 
     .problem-card {
@@ -147,7 +146,7 @@
 
 @media (max-width: 1300px) {
     .problem-section {
-        margin: 40px 0;
+        padding: 60px 8%;
     }
 
     .problem-container {
@@ -209,7 +208,7 @@
 @media (max-width: 550px) {
     .problem-cards {
         grid-template-columns: 1fr;
-        margin-top: 40px;
+        margin-top: 0;
         gap: 20px;
     }
 }

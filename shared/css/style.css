@@ -11,7 +11,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 8%;
+    padding: 30px 8%;
     flex-direction: column;
     gap: 30px;
 
@@ -21,11 +21,13 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         h2 {
             font-size: 1.75rem;
             font-weight: 500;
             margin: 0;
+            margin-bottom: 20px;
         }
 
         p {

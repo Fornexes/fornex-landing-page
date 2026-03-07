@@ -1,0 +1,72 @@
+.market-cards {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: stretch;
+
+    .market-card {
+        background-color: #FF5714;
+        padding: 10px;
+        border-radius: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+        .card-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            flex: 1;
+
+            p {
+                color: #fff;
+                font-weight: bolder;
+                margin: 0;
+            }
+
+            img {
+                max-height: 100px;
+                max-width: 150px;
+            }
+        }
+
+        .card-section-white {
+            background-color: #fff;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            p {
+                color: #FF5714;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.fonts {
+    span {
+        font-weight: bold;
+
+    }
+}
+
+
+@media (max-width:768px) {
+    .market-cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:350px) {
+    .card-section {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            text-align: center;
+        }
+    }
+}

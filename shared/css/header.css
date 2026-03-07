@@ -153,4 +153,7 @@
         align-items: flex-start;
     }
 
+    .btn-primary {
+        width: 100%;
+    }
 }

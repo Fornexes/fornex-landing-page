@@ -6,3 +6,32 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+    flex-direction: column;
+    gap: 30px;
+
+    .section-title {
+        color: #4E4E4E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    }
+}
+

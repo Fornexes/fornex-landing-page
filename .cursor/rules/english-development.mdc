@@ -1,0 +1,92 @@
+---
+description: English-only development standard - code in English, user-facing text in Portuguese
+alwaysApply: true
+---
+
+# English Development Standard
+
+All development code must be written in English, while user-facing text remains in Portuguese.
+
+## Code Elements (English Only)
+
+- **File names**: `problem-section.css`, `header.css`, `userService.js`
+- **Variable names**: `userName`, `totalPrice`, `isActive`
+- **Function names**: `calculateTotal()`, `fetchUserData()`, `handleClick()`
+- **Class names (CSS/HTML)**: `.problem-card`, `.hero-content`, `.btn-primary`
+- **IDs**: `#mainContent`, `#userProfile`
+- **Comments**: All code comments must be in English
+- **Constants**: `MAX_RETRIES`, `API_ENDPOINT`
+- **Type definitions**: `interface UserData`, `type OrderStatus`
+
+## User-Facing Content (Portuguese)
+
+- **HTML text content**: Titles, paragraphs, buttons text
+- **Alt text for images**: Descriptions for accessibility
+- **Placeholder text**: Form inputs and textareas
+- **Error messages**: Messages shown to users
+- **Success notifications**: User feedback messages
+
+## Examples
+
+### ✅ GOOD
+
+```html
+<!-- Class names in English, text content in Portuguese -->
+<div class="problem-card">
+  <h3 class="card-title">Fornecedores que não estão no digital</h3>
+  <button class="btn-primary">Quero saber mais</button>
+</div>
+```
+
+```css
+/* Class names and properties in English */
+.problem-section {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  color: #1a1a1a;
+}
+```
+
+```javascript
+// Variables and functions in English, user messages in Portuguese
+function fetchSupplierData(supplierId) {
+  if (!supplierId) {
+    return { error: "ID do fornecedor não encontrado" };
+  }
+  // Implementation
+}
+```
+
+### ❌ BAD
+
+```html
+<!-- Class names in Portuguese -->
+<div class="problema-card">
+  <h3 class="titulo-cartao">Title</h3>
+  <button class="botao-primario">Click</button>
+</div>
+```
+
+```css
+/* Class names in Portuguese */
+.secao-problema {
+  cor-de-fundo: #ffffff;
+}
+```
+
+```javascript
+// Variables in Portuguese
+function buscarDadosFornecedor(idFornecedor) {
+  // Implementation
+}
+```
+
+## File Naming Convention
+
+- Use kebab-case for HTML/CSS files: `problem-section.css`, `hero-header.html`
+- Use camelCase for JavaScript files: `userService.js`, `apiHandler.js`
+- Always use English words

@@ -40,3 +40,17 @@ section {
 body {
     background-color: #F5F5F5 !important;
 }
+
+/* Investor CTA block on home (replaces investor-only sections) */
+.investor-cta-section {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.investor-cta-section .investor-cta-description {
+    color: #4E4E4E;
+    margin: 0 0 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}

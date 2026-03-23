@@ -143,12 +143,44 @@
 }
 
 
-@media (max-width:768px) {
+/* Collapsed nav dropdown (all screens below xxl breakpoint) */
+@media (max-width: 1399px) {
+    .navbar-collapse {
+        margin-top: 10px;
+        background: rgba(8, 16, 42, 0.97);
+        border-radius: 14px;
+        padding: 8px 16px 16px;
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    }
 
+    .navbar-nav {
+        gap: 2px;
+    }
+
+    .nav-link {
+        padding: 11px 12px !important;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        transition: background 0.2s ease;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .navbar-nav .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.07);
+        text-decoration: none !important;
+    }
+}
+
+@media (max-width: 768px) {
     .hero {
         padding: 16px;
         background-position: center;
-
     }
 
     .hero h1 {

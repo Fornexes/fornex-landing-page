@@ -94,6 +94,22 @@
     margin: 0;
 }
 
+.profit-card-note {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+    margin-top: -12px;
+}
+
+.profit-disclaimer {
+    font-size: 0.85rem;
+    color: #888;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.5;
+    margin: 0;
+}
+
 @media (max-width: 1024px) {
     .profit-cards {
         grid-template-columns: 1fr;

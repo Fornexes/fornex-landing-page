@@ -1,0 +1,791 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "landing_page_build_specification",
+  "language": "pt-BR",
+  "project": {
+    "name": "Fornex",
+    "tagline": "Cotações inteligentes na construção civil",
+    "description": "Conceito validado de uma plataforma para conectar construtoras e fornecedores, centralizando a busca, o envio, o recebimento e a organização de propostas com apoio de inteligência artificial.",
+    "current_stage": "conceito validado; plataforma ainda não lançada",
+    "business_model": "Freemium SaaS",
+    "primary_audience": [
+      "construtoras",
+      "incorporadoras",
+      "empreiteiras",
+      "engenheiros",
+      "arquitetos",
+      "compradores e responsáveis por suprimentos",
+      "mestres de obra e gestores operacionais"
+    ],
+    "secondary_audience": [
+      "fornecedores de materiais para construção de pequeno, médio e grande porte"
+    ],
+    "primary_goal": "Apresentar a Fornex de forma clara, profissional e confiável e captar cadastros antecipados de construtoras e fornecedores.",
+    "secondary_goals": [
+      "Explicar o problema do processo fragmentado de cotação.",
+      "Mostrar como a solução proposta centraliza o ciclo de cotação.",
+      "Apresentar as principais funcionalidades planejadas.",
+      "Demonstrar validação com empresas do setor.",
+      "Reforçar credibilidade por meio do reconhecimento no Sebrae Supernova.",
+      "Apresentar a equipe e sua experiência complementar."
+    ]
+  },
+  "source_of_truth": {
+    "documents": [
+      "Layout landing page.pdf",
+      "Ideia principal Base - IA.pdf"
+    ],
+    "content_priority": [
+      "Não afirmar que a plataforma está pronta ou em operação.",
+      "Não apresentar funcionalidades planejadas como recursos já disponíveis.",
+      "A inteligência artificial organiza, lê, estrutura e padroniza propostas; ela não escolhe fornecedores nem toma a decisão de compra.",
+      "A validação descrita foi realizada com construtoras. Não afirmar que a validação com fornecedores já foi concluída.",
+      "Não inventar clientes, depoimentos, quantidade de usuários, economia de tempo, percentual de redução de custos ou outras métricas.",
+      "Não criar capturas falsas da plataforma. Usar somente telas reais e aprovadas; se não existirem, usar uma ilustração conceitual abstrata do fluxo de cotação."
+    ],
+    "terminology": {
+      "preferred": [
+        "conceito validado",
+        "plataforma em desenvolvimento",
+        "funcionalidades planejadas",
+        "apoio de inteligência artificial",
+        "organizar e padronizar propostas",
+        "cadastro antecipado"
+      ],
+      "avoid": [
+        "plataforma pronta",
+        "já disponível",
+        "clientes",
+        "usuários ativos",
+        "a IA escolhe a melhor proposta",
+        "a IA avalia ou decide a compra",
+        "garantia de economia",
+        "fornecedores validados pela Fornex"
+      ]
+    }
+  },
+  "brand": {
+    "personality": [
+      "profissional",
+      "simples",
+      "confiável",
+      "moderna",
+      "objetiva",
+      "especializada na construção civil"
+    ],
+    "voice": {
+      "tone": "Profissional, acessível e direto, sem jargão desnecessário.",
+      "writing_rules": [
+        "Usar frases curtas e fáceis de entender.",
+        "Explicar primeiro o benefício e depois o recurso.",
+        "Evitar tom agressivo de venda e superlativos sem comprovação.",
+        "Não sobrecarregar as seções com parágrafos longos.",
+        "Usar linguagem de futuro ao descrever funcionalidades ainda planejadas."
+      ]
+    },
+    "colors": {
+      "distribution": {
+        "white_and_neutrals": "60%",
+        "orange_primary": "30%",
+        "blue_accents": "10%"
+      },
+      "tokens": {
+        "primary": "#FF5714",
+        "primary_dark": "#BD3E0B",
+        "primary_light": "#FF682C",
+        "secondary": "#536C94",
+        "secondary_dark": "#3D4F6C",
+        "tertiary": "#5697FF",
+        "white": "#FFFFFF",
+        "off_white": "#F8FCFB",
+        "gray_light": "#F2F4F5",
+        "gray_medium": "#7A7A7A",
+        "gray_dark": "#2A2A2A"
+      },
+      "semantic_usage": {
+        "page_background": "#FFFFFF",
+        "alternate_section_background": "#F8FCFB",
+        "primary_text": "#2A2A2A",
+        "secondary_text": "#7A7A7A",
+        "primary_cta": "#FF5714",
+        "primary_cta_hover": "#BD3E0B",
+        "secondary_cta": "#536C94",
+        "secondary_cta_hover": "#3D4F6C",
+        "borders": "#F2F4F5",
+        "premium_detail": "#5697FF"
+      }
+    },
+    "typography": {
+      "heading": {
+        "font_family": "Poppins, Montserrat, sans-serif",
+        "weights": [600, 700],
+        "letter_spacing": "-0.02em",
+        "line_height": 1.1
+      },
+      "body": {
+        "font_family": "Inter, Nunito Sans, sans-serif",
+        "weights": [400, 500],
+        "line_height": 1.5
+      },
+      "accent": {
+        "font_family": "Playfair Display, Cormorant Garamond, serif",
+        "usage": "Somente em uma frase de destaque opcional; não misturar muitas famílias tipográficas."
+      },
+      "desktop_scale": {
+        "hero_title": "clamp(3.5rem, 6vw, 4.5rem)",
+        "section_title": "clamp(2.25rem, 4vw, 3rem)",
+        "card_title": "clamp(1.375rem, 2vw, 1.75rem)",
+        "body_large": "1.25rem",
+        "body": "1rem to 1.125rem",
+        "small": "0.875rem"
+      },
+      "mobile_scale": {
+        "hero_title": "2.5rem",
+        "section_title": "2rem",
+        "card_title": "1.25rem",
+        "body": "1rem"
+      }
+    },
+    "visual_rules": [
+      "Visual limpo, editorial e tecnológico, com bastante respiro.",
+      "Usar a cor laranja com intenção em CTAs, destaques e conexões do fluxo.",
+      "Usar azul em badges, ícones e elementos secundários.",
+      "Preferir diagramas e fluxos conceituais a mockups genéricos.",
+      "Ícones devem compartilhar o mesmo estilo linear, espessura e proporção.",
+      "Alternar seções brancas e off-white para marcar ritmo sem criar blocos pesados."
+    ],
+    "do_not_use": [
+      "cores neon",
+      "sombras duras",
+      "fundos visualmente poluídos",
+      "gradientes excessivos",
+      "muitas famílias tipográficas",
+      "cards genéricos em todas as seções",
+      "estética barata de template",
+      "copy agressiva de vendas",
+      "mockup falso de software",
+      "animações que prejudiquem leitura ou desempenho"
+    ]
+  },
+  "layout_system": {
+    "max_width": "1280px",
+    "grid": {
+      "desktop": "12 columns",
+      "tablet": "8 columns",
+      "mobile": "4 columns"
+    },
+    "breakpoints": {
+      "mobile_max": "767px",
+      "tablet": "768px-1023px",
+      "desktop_min": "1024px"
+    },
+    "spacing": {
+      "section_vertical_desktop": "96px-140px",
+      "section_vertical_mobile": "64px",
+      "container_padding_desktop": "48px",
+      "container_padding_tablet": "32px",
+      "container_padding_mobile": "20px",
+      "card_padding": "24px-32px",
+      "gap_large": "40px",
+      "gap_medium": "24px",
+      "gap_small": "16px"
+    },
+    "radius": {
+      "small": "10px",
+      "medium": "16px",
+      "large": "24px",
+      "card": "18px"
+    },
+    "shadow": {
+      "card": "0 12px 30px rgba(0, 0, 0, 0.06)",
+      "hover": "0 18px 40px rgba(42, 42, 42, 0.10)"
+    }
+  },
+  "site_architecture": {
+    "page_type": "single_page_landing",
+    "section_order": [
+      "header",
+      "hero",
+      "problem",
+      "solution",
+      "features",
+      "validation",
+      "recognition",
+      "team",
+      "final_cta",
+      "footer"
+    ],
+    "navigation": [
+      { "label": "O problema", "target": "#problema" },
+      { "label": "A solução", "target": "#solucao" },
+      { "label": "Funcionalidades", "target": "#funcionalidades" },
+      { "label": "Validação", "target": "#validacao" },
+      { "label": "Equipe", "target": "#equipe" }
+    ]
+  },
+  "global_components": {
+    "header": {
+      "id": "header",
+      "type": "sticky_auto_hide_navigation",
+      "behavior": {
+        "initial": "visible and transparent or white",
+        "scroll_down": "hide after a small threshold",
+        "scroll_up": "show with solid white background and subtle bottom border",
+        "anchor_navigation": "smooth scroll with reduced-motion fallback",
+        "mobile": "replace desktop links with an accessible hamburger menu"
+      },
+      "content": {
+        "left": "Fornex logo",
+        "center_or_right": "section links",
+        "cta": {
+          "label": "Quero conhecer",
+          "action": "scroll_to:#cadastro"
+        }
+      },
+      "accessibility": [
+        "Hamburger button must have aria-expanded and aria-controls.",
+        "Menu must close after selecting an anchor.",
+        "Keyboard focus must remain visible.",
+        "Logo link returns to #inicio and has an accessible label."
+      ]
+    },
+    "buttons": {
+      "minimum_height": "48px",
+      "primary": {
+        "background": "#FF5714",
+        "text": "#FFFFFF",
+        "hover_background": "#BD3E0B"
+      },
+      "secondary": {
+        "background": "#536C94",
+        "text": "#FFFFFF",
+        "hover_background": "#3D4F6C"
+      },
+      "focus": "Visible 2px outline with sufficient contrast and offset."
+    },
+    "section_heading_pattern": {
+      "eyebrow": "Optional short blue or orange label.",
+      "title": "Short, benefit-led heading with a controlled line length.",
+      "intro": "Maximum 2-3 short lines on desktop."
+    }
+  },
+  "sections": [
+    {
+      "id": "inicio",
+      "key": "hero",
+      "background": "#FFFFFF",
+      "purpose": "Explicar imediatamente o que é a Fornex e direcionar cada público ao cadastro antecipado.",
+      "layout": {
+        "desktop": "Two columns, approximately 55% copy and 45% visual.",
+        "mobile": "Single column; copy first and conceptual visual below."
+      },
+      "content": {
+        "eyebrow": "Uma nova forma de organizar cotações",
+        "headline": "Cotações inteligentes na construção civil",
+        "supporting_text": "A Fornex está sendo desenvolvida para conectar construtoras e fornecedores em um só ambiente, centralizando a busca, o envio, o recebimento e a organização de propostas com apoio de inteligência artificial.",
+        "status_badge": "Conceito validado • Cadastros antecipados",
+        "primary_cta": {
+          "label": "Sou construtora",
+          "action": "external_form",
+          "url_placeholder": "{{GOOGLE_FORM_CONSTRUTORAS_URL}}"
+        },
+        "secondary_cta": {
+          "label": "Sou fornecedor",
+          "action": "external_form",
+          "url_placeholder": "{{GOOGLE_FORM_FORNECEDORES_URL}}"
+        },
+        "microcopy": "Escolha seu perfil para registrar interesse e acompanhar as próximas etapas da Fornex."
+      },
+      "visual": {
+        "preferred": "Ilustração conceitual mostrando um pedido de cotação saindo de uma construtora, chegando a múltiplos fornecedores e retornando como propostas organizadas.",
+        "approved_alternative": "Usar telas reais da Fornex somente se forem fornecidas e explicitamente aprovadas.",
+        "forbidden": "Não gerar dashboards, notebooks ou capturas falsas que façam parecer que a plataforma já está pronta.",
+        "alt_text": "Fluxo conceitual da Fornex conectando uma construtora a vários fornecedores e organizando as propostas recebidas."
+      }
+    },
+    {
+      "id": "problema",
+      "key": "problem",
+      "background": "#F8FCFB",
+      "purpose": "Mostrar que o processo atual de cotação é fragmentado, repetitivo e difícil de acompanhar.",
+      "content": {
+        "eyebrow": "O cenário atual",
+        "headline": "Hoje, cada cotação passa por ferramentas diferentes",
+        "intro": "Em muitas empresas, a busca por fornecedores, o envio dos pedidos, o recebimento das respostas e a comparação das propostas ficam espalhados entre canais que não conversam entre si.",
+        "closing_statement": "O resultado é mais tempo operacional, menos rastreabilidade e maior risco de erros e retrabalho."
+      },
+      "central_diagram": {
+        "center_label": "Cotação",
+        "orbit_items": [
+          "WhatsApp",
+          "Google",
+          "Instagram",
+          "E-mail",
+          "Planilhas",
+          "Pastas",
+          "Indicações"
+        ],
+        "style": "Items appear visually disconnected around the center; connections may be dashed or interrupted to communicate fragmentation.",
+        "mobile_fallback": "Static wrapped list connected to a central label; no continuously rotating animation."
+      },
+      "pain_points": [
+        {
+          "title": "Encontrar fornecedores compatíveis",
+          "short": "A busca é manual e espalhada, sem filtros centralizados por material, região, prazo, frete ou especialidade.",
+          "icon": "search"
+        },
+        {
+          "title": "Repetir pedidos de orçamento",
+          "short": "A mesma solicitação precisa ser enviada individualmente para diferentes fornecedores e canais.",
+          "icon": "send"
+        },
+        {
+          "title": "Organizar respostas manualmente",
+          "short": "PDFs, fotos, mensagens e planilhas exigem conferência e reorganização antes da comparação.",
+          "icon": "files"
+        },
+        {
+          "title": "Recuperar o histórico de compras",
+          "short": "Cotações antigas ficam dispersas por obra, material, fornecedor e ferramenta.",
+          "icon": "history"
+        },
+        {
+          "title": "Avaliar a confiabilidade",
+          "short": "A verificação de novos fornecedores depende de indicações, experiência anterior e pesquisa manual.",
+          "icon": "shield-check"
+        },
+        {
+          "title": "Reduzir tarefas repetitivas",
+          "short": "A equipe gasta tempo buscando contatos, reenviando pedidos, acompanhando respostas e montando comparativos.",
+          "icon": "clock"
+        }
+      ],
+      "interaction": {
+        "desktop": "Cards reveal the complete short description on hover and focus.",
+        "touch": "Descriptions remain visible or expand on tap; essential information must not depend on hover."
+      }
+    },
+    {
+      "id": "solucao",
+      "key": "solution",
+      "background": "#FFFFFF",
+      "purpose": "Apresentar a Fornex como o ponto central planejado para o ciclo completo de cotação.",
+      "content": {
+        "eyebrow": "A proposta da Fornex",
+        "headline": "Todo o ciclo de cotação conectado em um só lugar",
+        "intro": "Em vez de alternar entre várias ferramentas, a construtora poderá concentrar o fluxo de cotação em um ambiente desenvolvido para as necessidades da construção civil.",
+        "highlight": "Com a Fornex, cada etapa se conecta ao mesmo processo.",
+        "clarification": "A plataforma organiza as informações para apoiar a análise. A decisão de compra continua sendo da equipe responsável."
+      },
+      "central_diagram": {
+        "center_label": "FORNEX",
+        "connected_items": [
+          "Busca de fornecedores",
+          "Solicitações de orçamento",
+          "Acompanhamento de respostas",
+          "Recebimento de propostas",
+          "Padronização com IA",
+          "Comparação de informações",
+          "Histórico e documentos"
+        ],
+        "style": "All items connect directly to Fornex using orderly solid lines; contrast deliberately with the fragmented diagram in the previous section."
+      }
+    },
+    {
+      "id": "funcionalidades",
+      "key": "features",
+      "background": "#F8FCFB",
+      "purpose": "Dar uma visão concreta e simples das funcionalidades planejadas para construtoras.",
+      "content": {
+        "eyebrow": "Funcionalidades planejadas",
+        "headline": "Menos tarefas espalhadas. Mais controle sobre cada cotação.",
+        "intro": "A Fornex foi pensada para acompanhar o processo desde a busca por fornecedores até a organização do histórico de compra.",
+        "closing_statement": "Essas são algumas das funcionalidades planejadas para a Fornex. A solução será evoluída junto às necessidades do mercado."
+      },
+      "feature_items": [
+        {
+          "title": "Um pedido para vários fornecedores",
+          "summary": "Criar uma solicitação uma única vez e enviá-la a múltiplos fornecedores, sem expor os participantes entre si.",
+          "details": [
+            "Acompanhar status como enviado, respondido e pendente.",
+            "Manter o histórico do pedido centralizado.",
+            "Reduzir o esforço de copiar, colar e acompanhar mensagens separadas."
+          ],
+          "icon": "send-horizontal"
+        },
+        {
+          "title": "Propostas comparáveis em um só lugar",
+          "summary": "Usar IA para ler e estruturar dados de propostas recebidas em formatos diferentes.",
+          "details": [
+            "Organizar preço, prazo, frete e condições comerciais.",
+            "Apresentar as informações em uma visualização padronizada.",
+            "Evitar a reconstrução manual de planilhas comparativas."
+          ],
+          "disclaimer": "A IA organiza as informações; ela não escolhe a proposta vencedora.",
+          "icon": "columns"
+        },
+        {
+          "title": "Busca mais relevante de fornecedores",
+          "summary": "Encontrar fornecedores com filtros coerentes com a demanda da obra.",
+          "details": [
+            "Filtrar por região, material e especialidade.",
+            "Considerar frete e raio de atendimento.",
+            "Navegar por fornecedores organizados por categoria."
+          ],
+          "icon": "search-check"
+        },
+        {
+          "title": "Histórico pesquisável",
+          "summary": "Construir uma memória operacional das cotações e aprovações da empresa.",
+          "details": [
+            "Consultar por obra, material e fornecedor.",
+            "Pesquisar por data, cidade, preço e status.",
+            "Reduzir a dependência de mensagens, pastas e memória da equipe."
+          ],
+          "icon": "archive"
+        },
+        {
+          "title": "Orçamentos organizados por fase da obra",
+          "summary": "Relacionar cotações a obras, categorias, fornecedores e etapas de execução.",
+          "details": [
+            "Visualizar valor planejado e valor gasto.",
+            "Registrar prazo previsto e status da fase.",
+            "Acompanhar histórico de orçamentos e evolução dos custos."
+          ],
+          "icon": "building-2"
+        }
+      ],
+      "interaction": {
+        "desktop": "Use an editorial feature grid or sticky narrative; cards may expand on hover/focus but titles and summaries must always remain visible.",
+        "mobile": "Use accessible accordions or stacked blocks with tap targets of at least 44px."
+      }
+    },
+    {
+      "id": "validacao",
+      "key": "validation",
+      "background": "#FFFFFF",
+      "purpose": "Demonstrar que a proposta nasceu de pesquisa qualitativa com empresas do setor, e não apenas de uma hipótese interna.",
+      "content": {
+        "eyebrow": "Validação com o mercado",
+        "headline": "Conversamos com quem vive esse processo na prática",
+        "intro": "A validação inicial reuniu construtoras, incorporadoras e profissionais envolvidos em compras e orçamentos para entender como buscam fornecedores, solicitam cotações e organizam as respostas.",
+        "companies_intro": "Entre as empresas entrevistadas estão:",
+        "companies": [
+          "CMS Construtora",
+          "Aquino Incorporações",
+          "HE Martins",
+          "RC Negócios Imobiliários",
+          "RC Engenharia",
+          "Haka Construtora"
+        ],
+        "research_scope_note": "A validação apresentada considera entrevistas com construtoras. A validação com fornecedores ainda deve ser tratada como uma próxima etapa.",
+        "closing_quote": "Conversamos com o mercado antes de construir a solução. O problema não está apenas em encontrar fornecedores, mas em gerenciar todo o ciclo de cotação de forma organizada, confiável e eficiente."
+      },
+      "validated_findings": [
+        "A busca acontece em Google, Instagram, WhatsApp, indicações, contatos antigos e feiras.",
+        "As empresas costumam solicitar de 3 a 6 orçamentos por material ou serviço.",
+        "O envio da mesma solicitação é repetitivo e o acompanhamento das respostas é manual.",
+        "As propostas chegam em PDF, foto, print, mensagem e planilha.",
+        "A comparação depende de Excel, Notion, pastas e outros controles próprios.",
+        "Perda de planilhas, informações incompletas e propostas fora de ordem geram retrabalho.",
+        "A confiabilidade de novos fornecedores exige pesquisa adicional."
+      ],
+      "visual_narrative": [
+        "Etapa 1: empresas e profissionais entrevistados.",
+        "Etapa 2: dores recorrentes surgindo de diferentes rotinas.",
+        "Etapa 3: dores convergindo para um único fluxo fragmentado.",
+        "Etapa 4: princípios da Fornex conectados diretamente às dores identificadas."
+      ],
+      "visual_rules": [
+        "Não usar logotipos das empresas sem autorização.",
+        "Se não houver autorização, apresentar os nomes em texto simples ou usar a expressão 'empresas entrevistadas'.",
+        "Não transformar entrevistas qualitativas em percentuais estatísticos."
+      ]
+    },
+    {
+      "id": "reconhecimento",
+      "key": "recognition",
+      "background": "#2A2A2A",
+      "purpose": "Adicionar credibilidade por meio de reconhecimento externo sem alongar excessivamente a página.",
+      "content": {
+        "eyebrow": "Reconhecimento",
+        "headline": "Antes de se tornar uma plataforma, a Fornex já era uma ideia reconhecida.",
+        "body": "A Fornex conquistou o 1º lugar na Região Sul do Sebrae Supernova 2025. O reconhecimento reforça o potencial da proposta e sua conexão com um problema real do mercado.",
+        "supporting_line": "Problema identificado. Mercado ouvido. Ideia reconhecida. Solução em desenvolvimento."
+      },
+      "visual": {
+        "type": "compact award band",
+        "elements": [
+          "selo visual de 1º lugar",
+          "referência textual ao Sebrae Supernova 2025",
+          "linha da jornada em quatro etapas"
+        ],
+        "legal_note": "Usar marca ou logotipo oficial do Sebrae/Supernova somente com arquivo autorizado e respeitando o manual de marca. Caso contrário, usar apenas texto."
+      }
+    },
+    {
+      "id": "equipe",
+      "key": "team",
+      "background": "#F8FCFB",
+      "purpose": "Mostrar que a equipe combina experiência prática na construção civil, tecnologia e validação de mercado.",
+      "content": {
+        "eyebrow": "Quem está construindo a Fornex",
+        "headline": "Experiência de mercado e tecnologia no mesmo time",
+        "intro": "A Fornex reúne conhecimento sobre compras e fornecedores na construção civil, desenvolvimento de software e pesquisa com futuros usuários.",
+        "closing_statement": "A Fornex nasceu da combinação entre experiência prática na construção civil, desenvolvimento de tecnologia e validação constante com o mercado."
+      },
+      "members": [
+        {
+          "name": "Vanessa",
+          "role": "Mercado, compras e gestão",
+          "bio": "Formada em Contabilidade pela FADERGS e com mais de 12 anos de experiência na construção civil. Contribui com conhecimento sobre compras, fornecedores, gestão financeira e desafios vividos diariamente pelas construtoras.",
+          "photo_placeholder": "{{VANESSA_PHOTO}}"
+        },
+        {
+          "name": "Gabriel",
+          "role": "Tecnologia e produto",
+          "bio": "Técnico em Informática e formado em Sistemas para Internet pelo IFSC, com atuação em desenvolvimento de software. É responsável por transformar necessidades identificadas no mercado em uma solução tecnológica viável e escalável.",
+          "photo_placeholder": "{{GABRIEL_PHOTO}}"
+        },
+        {
+          "name": "Victor",
+          "role": "Pesquisa e validação",
+          "bio": "Técnico em Informática e estudante de Sistemas para Internet pelo IFSC. Atua na pesquisa de mercado, na validação da solução e no entendimento das necessidades que deram origem à plataforma.",
+          "photo_placeholder": "{{VICTOR_PHOTO}}"
+        }
+      ],
+      "interaction": {
+        "desktop": "Photo and role are visible by default; bio appears on hover and keyboard focus or in a side detail panel.",
+        "touch": "Bio expands on tap; provide an explicit button and aria-expanded.",
+        "fallback": "If team photos are not available, use refined initials or neutral portraits only after approval; never generate fake photos of the founders."
+      }
+    },
+    {
+      "id": "cadastro",
+      "key": "final_cta",
+      "background": "#536C94",
+      "purpose": "Converter visitantes que chegaram ao fim da narrativa.",
+      "content": {
+        "headline": "Ajude a construir uma nova forma de cotar na construção civil",
+        "body": "Registre seu interesse e acompanhe a evolução da Fornex desde as primeiras etapas.",
+        "primary_cta": {
+          "label": "Cadastrar minha construtora",
+          "action": "external_form",
+          "url_placeholder": "{{GOOGLE_FORM_CONSTRUTORAS_URL}}"
+        },
+        "secondary_cta": {
+          "label": "Cadastrar como fornecedor",
+          "action": "external_form",
+          "url_placeholder": "{{GOOGLE_FORM_FORNECEDORES_URL}}"
+        },
+        "privacy_microcopy": "O cadastro é apenas uma manifestação de interesse e não cria compromisso comercial."
+      }
+    },
+    {
+      "id": "rodape",
+      "key": "footer",
+      "background": "#FFFFFF",
+      "content": {
+        "brand": "Fornex logo",
+        "navigation": "Repeat the main section anchors.",
+        "contact": {
+          "phone_display": "(48) 99206-9010",
+          "phone_link": "tel:+5548992069010"
+        },
+        "copyright": "© 2026 Fornex. Todos os direitos reservados."
+      }
+    }
+  ],
+  "forms_and_conversion": {
+    "cta_positions": [
+      "hero above the fold",
+      "header",
+      "after credibility and team content in final CTA"
+    ],
+    "forms": {
+      "constructor": {
+        "url": "{{GOOGLE_FORM_CONSTRUTORAS_URL}}",
+        "open_behavior": "Open in a new tab with rel='noopener noreferrer'."
+      },
+      "supplier": {
+        "url": "{{GOOGLE_FORM_FORNECEDORES_URL}}",
+        "open_behavior": "Open in a new tab with rel='noopener noreferrer'."
+      }
+    },
+    "analytics_events": [
+      "cta_constructor_hero_click",
+      "cta_supplier_hero_click",
+      "cta_constructor_final_click",
+      "cta_supplier_final_click",
+      "navigation_anchor_click",
+      "mobile_menu_open",
+      "feature_expand",
+      "team_member_expand",
+      "phone_click"
+    ],
+    "analytics_note": "Implement analytics only after a provider and privacy requirements are defined. Do not include tracking by default."
+  },
+  "responsive_behavior": {
+    "desktop": {
+      "hero": "Two-column composition.",
+      "feature_layout": "Editorial grid, sticky narrative or alternating rows.",
+      "validation": "Horizontal journey with clear progression.",
+      "team": "Three aligned portraits with accessible detail reveal."
+    },
+    "tablet": {
+      "hero": "Stack vertically if content becomes compressed.",
+      "grids": "Use two columns where possible.",
+      "font_reduction": "10%-15% from large desktop values."
+    },
+    "mobile": {
+      "header": "Hamburger menu.",
+      "hero": "Text first; conceptual visual below.",
+      "grids": "Single column.",
+      "cta": "Full width.",
+      "diagrams": "Simplified static or vertically scrollable representation.",
+      "hover_content": "Always visible or explicitly expandable by tap.",
+      "section_spacing": "64px."
+    }
+  },
+  "motion_and_interactions": {
+    "principles": [
+      "Motion should explain connection and centralization, not decorate the page.",
+      "Animations must be subtle, short and reversible.",
+      "Do not block reading while animations run."
+    ],
+    "allowed": {
+      "section_reveal": "opacity and translateY up to 16px",
+      "card_hover": "translateY(-4px)",
+      "button_hover": "darken background and add soft shadow",
+      "image_hover": "scale up to 1.03 only when useful",
+      "diagram_connections": "draw or fade connections once when entering viewport"
+    },
+    "reduced_motion": "Respect prefers-reduced-motion by disabling scroll reveal, transforms and animated diagram lines.",
+    "forbidden": [
+      "continuous spinning diagrams",
+      "parallax that causes motion sickness",
+      "autoplay video with sound",
+      "large bouncing elements",
+      "cursor effects",
+      "scroll hijacking"
+    ]
+  },
+  "accessibility": {
+    "target": "WCAG 2.2 AA",
+    "requirements": [
+      "Use semantic landmarks: header, nav, main, section and footer.",
+      "Maintain a logical heading hierarchy with one h1.",
+      "Meet AA contrast for text, controls and focus indicators.",
+      "Minimum body font size of 16px.",
+      "Minimum button height of 48px.",
+      "Provide visible focus states for all interactive elements.",
+      "Provide useful alt text for meaningful images and empty alt for decorative images.",
+      "Do not communicate meaning only through color.",
+      "Ensure all hover interactions work with keyboard and touch.",
+      "Use aria-live only where dynamic feedback truly requires it.",
+      "Add a skip-to-content link.",
+      "Respect prefers-reduced-motion."
+    ]
+  },
+  "seo": {
+    "title": "Fornex | Cotações inteligentes na construção civil",
+    "meta_description": "Conheça a Fornex, uma plataforma em desenvolvimento para centralizar a busca de fornecedores e a gestão de cotações na construção civil com apoio de IA.",
+    "canonical_placeholder": "{{CANONICAL_URL}}",
+    "open_graph": {
+      "title": "Fornex | Cotações inteligentes na construção civil",
+      "description": "Busca, envio, recebimento e organização de propostas em um só fluxo.",
+      "image_placeholder": "{{OG_IMAGE_URL}}",
+      "type": "website",
+      "locale": "pt_BR"
+    },
+    "structured_data": {
+      "type": "Organization",
+      "fields": [
+        "name",
+        "url",
+        "logo",
+        "contactPoint"
+      ],
+      "note": "Only include values that are confirmed before publishing."
+    }
+  },
+  "performance": {
+    "targets": {
+      "lighthouse_performance_mobile": ">= 90",
+      "lighthouse_accessibility": ">= 95",
+      "lighthouse_best_practices": ">= 95",
+      "lighthouse_seo": ">= 95"
+    },
+    "requirements": [
+      "Use responsive images with explicit width and height.",
+      "Prefer SVG for diagrams and icons.",
+      "Lazy-load images below the fold.",
+      "Do not lazy-load the hero's primary visual if it is the LCP element.",
+      "Subset or self-host only the font weights actually used.",
+      "Avoid large animation libraries when CSS or a small utility is enough.",
+      "Minimize client-side JavaScript and layout shifts."
+    ]
+  },
+  "implementation_guidance": {
+    "framework": "Use the existing project stack. If starting from zero, prefer a modern component-based framework with TypeScript and semantic HTML.",
+    "component_suggestion": [
+      "SiteHeader",
+      "HeroSection",
+      "FragmentedProcessDiagram",
+      "PainPointList",
+      "CentralizedSolutionDiagram",
+      "FeatureSection",
+      "ValidationJourney",
+      "RecognitionBand",
+      "TeamSection",
+      "FinalCTA",
+      "SiteFooter"
+    ],
+    "content_rule": "Keep all final copy and repeatable lists in a central content/data file rather than hard-coding text across multiple components.",
+    "icon_rule": "Use one established icon library or a single coherent custom SVG set; do not mix styles.",
+    "image_rule": "Use optimized local assets with descriptive filenames. Do not hotlink third-party images.",
+    "fallback_rule": "The page must remain understandable with JavaScript disabled except for enhancements such as menu behavior and expandable details."
+  },
+  "asset_checklist": {
+    "required_before_publish": [
+      "Fornex logo in SVG or high-resolution transparent PNG",
+      "Google Form URL for constructors",
+      "Google Form URL for suppliers",
+      "approved team photos",
+      "canonical production URL",
+      "Open Graph image",
+      "privacy policy URL if tracking or form data is embedded"
+    ],
+    "optional": [
+      "approved real product screenshots",
+      "authorized Sebrae Supernova badge or logo",
+      "authorized logos of interviewed companies"
+    ],
+    "placeholder_policy": "Development placeholders must be visually marked and must not ship to production."
+  },
+  "excluded_from_initial_landing": [
+    "Detailed pricing tables for Free and Paid plans",
+    "Revenue projections",
+    "Competitor comparison table",
+    "Unverified broad market-size claims",
+    "Embedded application dashboard",
+    "User login or account creation",
+    "Testimonials that were not directly collected and approved",
+    "A claim that suppliers have already been validated"
+  ],
+  "acceptance_criteria": [
+    "The first screen clearly states what the Fornex proposes and that it is not yet a launched platform.",
+    "The two audience CTAs are visible above the fold and lead to different configurable form URLs.",
+    "The problem and solution diagrams visibly contrast fragmentation with centralization.",
+    "No fake platform screenshot is present.",
+    "All planned features use future-oriented or concept-stage language.",
+    "The AI feature is described as organization and standardization support, never as autonomous decision-making.",
+    "The validation section clearly states that the current interviews were with constructors.",
+    "All essential hover content is accessible by keyboard and touch.",
+    "The header hides on downward scroll, returns on upward scroll and becomes a hamburger menu on mobile.",
+    "The page is fully usable at 320px width without horizontal scrolling.",
+    "The page respects reduced-motion preferences.",
+    "No placeholder URL, placeholder image or development label remains in the production build.",
+    "The final page passes automated accessibility, performance and responsive checks and receives a manual keyboard review."
+  ]
+}

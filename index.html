@@ -1,306 +1,531 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fornex</title>
-    <link rel="icon" href="shared/imgs/favicon/white-fornex.ico" type="image/x-icon">
-    <link rel="stylesheet" href="shared/css/style.css">
-    <link rel="stylesheet" href="shared/css/header.css">
-    <link rel="stylesheet" href="shared/css/market-section.css">
-    <link rel="stylesheet" href="shared/css/how-works.css">
-    <link rel="stylesheet" href="shared/css/problem-section.css">
-    <link rel="stylesheet" href="shared/css/about-section.css">
-    <link rel="stylesheet" href="shared/css/footer.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fornex | Cotações inteligentes na construção civil</title>
+  <meta name="description"
+    content="Conheça a Fornex, uma plataforma em desenvolvimento para centralizar a busca de fornecedores e a gestão de cotações na construção civil com apoio de IA.">
+  <meta property="og:title" content="Fornex | Cotações inteligentes na construção civil">
+  <meta property="og:description"
+    content="Busca, envio, recebimento e organização de propostas em um só fluxo.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="shared/imgs/logo.svg" type="image/svg+xml">
+  <link rel="preload" href="shared/imgs/hero_section_background.webp" as="image">
+  <link rel="stylesheet" href="shared/css/style.css">
+  <link rel="stylesheet" href="shared/css/header.css">
+  <link rel="stylesheet" href="shared/css/sections.css">
+  <link rel="stylesheet" href="shared/css/footer.css">
 </head>
 
 <body>
-    <header class="hero" id="home">
-        <nav class="navbar navbar-expand-xxl bg-none">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="shared/imgs/Frame_21_orange 1.png" alt="Logo Fornex">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#problema">Problema</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mercado">Mercado</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre a Fornex</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#como-funciona">Como Funciona</a>
-                        </li>
-                    </ul>
-                </div>
+  <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+
+  <header class="site-header" id="header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="#inicio" aria-label="Fornex — voltar ao início">
+        <img src="shared/imgs/logo.svg" alt="Fornex" width="160" height="40">
+      </a>
+
+      <nav class="site-header__nav" aria-label="Navegação principal">
+        <ul class="site-header__nav-list">
+          <li><a class="site-header__nav-link" href="#problema">O problema</a></li>
+          <li><a class="site-header__nav-link" href="#solucao">A solução</a></li>
+          <li><a class="site-header__nav-link" href="#funcionalidades">Funcionalidades</a></li>
+          <li><a class="site-header__nav-link" href="#validacao">Validação</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"
+          aria-label="Abrir menu de navegação">
+          <svg class="site-header__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="Navegação principal">
+    <button type="button" class="mobile-menu__close" aria-label="Fechar menu">
+      <svg class="mobile-menu__close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        aria-hidden="true">
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </svg>
+    </button>
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__section">
+        <span class="mobile-menu__section-title">Navegação</span>
+      </li>
+      <li><a class="mobile-menu__link" href="#problema">O problema</a></li>
+      <li><a class="mobile-menu__link" href="#solucao">A solução</a></li>
+      <li><a class="mobile-menu__link" href="#funcionalidades">Funcionalidades</a></li>
+        <li><a class="mobile-menu__link" href="#validacao">Validação</a></li>
+      <li class="mobile-menu__section">
+        <span class="mobile-menu__section-title">Cadastro</span>
+      </li>
+      <li><a class="mobile-menu__link" href="#cadastro">Quero conhecer</a></li>
+    </ul>
+  </nav>
+
+  <button type="button" class="menu-overlay" hidden aria-label="Fechar menu"></button>
+
+  <main id="conteudo-principal">
+    <!-- Hero -->
+    <div id="inicio" class="section-anchor" aria-hidden="true"></div>
+    <section class="hero-section section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid reveal">
+          <div class="hero-content">
+            <h1 class="hero-title" id="hero-title">Cotações inteligentes na construção civil</h1>
+            <p class="hero-text">A Fornex está sendo desenvolvida para conectar construtoras e fornecedores em um só
+              ambiente, centralizando a busca, o envio, o recebimento e a organização de propostas.</p>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-diagram" role="img"
+              aria-label="Fluxo conceitual da Fornex conectando uma construtora a vários fornecedores e organizando as propostas recebidas.">
+              <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="130" width="100" height="80" rx="12" fill="#F8FCFB" stroke="#536C94" stroke-width="2" />
+                <text x="70" y="165" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#536C94">Construtora</text>
+                <text x="70" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#7A7A7A">Pedido de cotação</text>
+                <path d="M120 170 L180 170" stroke="#FF5714" stroke-width="2" marker-end="url(#arrow)" />
+                <circle cx="240" cy="170" r="50" fill="#FF5714" opacity="0.12" />
+                <circle cx="240" cy="170" r="35" fill="#FF5714" />
+                <text x="240" y="175" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">FORNEX</text>
+                <path d="M290 130 L350 80" stroke="#5697FF" stroke-width="1.5" stroke-dasharray="4 3" />
+                <path d="M290 170 L360 170" stroke="#5697FF" stroke-width="1.5" stroke-dasharray="4 3" />
+                <path d="M290 210 L350 260" stroke="#5697FF" stroke-width="1.5" stroke-dasharray="4 3" />
+                <rect x="360" y="50" width="90" height="50" rx="10" fill="#FFFFFF" stroke="#F2F4F5" stroke-width="1.5" />
+                <text x="405" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2A2A2A">Fornecedor A</text>
+                <rect x="370" y="145" width="90" height="50" rx="10" fill="#FFFFFF" stroke="#F2F4F5" stroke-width="1.5" />
+                <text x="415" y="175" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2A2A2A">Fornecedor B</text>
+                <rect x="360" y="240" width="90" height="50" rx="10" fill="#FFFFFF" stroke="#F2F4F5" stroke-width="1.5" />
+                <text x="405" y="270" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2A2A2A">Fornecedor C</text>
+                <path d="M350 80 L290 130" stroke="#536C94" stroke-width="1.5" marker-end="url(#arrowBlue)" />
+                <path d="M360 170 L290 170" stroke="#536C94" stroke-width="1.5" marker-end="url(#arrowBlue)" />
+                <path d="M350 260 L290 210" stroke="#536C94" stroke-width="1.5" marker-end="url(#arrowBlue)" />
+                <rect x="155" y="280" width="170" height="55" rx="12" fill="#F8FCFB" stroke="#5697FF" stroke-width="2" />
+                <text x="240" y="305" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#536C94">Propostas organizadas</text>
+                <text x="240" y="322" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#7A7A7A">Comparação padronizada</text>
+                <path d="M240 220 L240 280" stroke="#5697FF" stroke-width="2" marker-end="url(#arrowBlue)" />
+                <defs>
+                  <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                    <path d="M0,0 L0,6 L8,3 z" fill="#FF5714" />
+                  </marker>
+                  <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                    <path d="M0,0 L0,6 L8,3 z" fill="#536C94" />
+                  </marker>
+                </defs>
+              </svg>
             </div>
-        </nav>
-
-        <div class="hero-content">
-            <div>
-                <h1>Fornecedores certos,<br> em minutos.</h1>
-
-                <p>
-                    Conectando construtoras a fornecedores<br>
-                    de forma simples e eficiente
-                </p>
-
-                <p class="early-access-text">Entrar no acesso antecipado:</p>
-
-                <div class="buttons">
-                    <a href="https://docs.google.com/forms/d/1KFNcURXurGxkmOmbZhcmV2wtgbuQHsO9CJBOqynQ75Y/viewform"
-                        target="_blank" class="btn-primary">Sou Construtora</a>
-                    <a href="https://docs.google.com/forms/d/1VTUe161rTqBNPD-RwNwC976np0qFQpJ3BPXqv5guExA/viewform"
-                        target="_blank" class="btn-primary">Sou Fornecedora</a>
-                </div>
-            </div>
+          </div>
         </div>
-    </header>
-
-
-    <section class="problem-section" id="problema">
-        <div class="problem-container">
-            <div class="problem-content">
-                <span class="problem-badge">PROBLEMA EXISTENTE</span>
-                <h2 class="problem-title">Fornecedores que não estão no digital deixam de existir para o mercado.
-                </h2>
-                <p class="problem-text">Construtoras buscam fornecedores online. Quem não aparece, não vende.</p>
-            </div>
-            <div class="problem-image">
-                <img src="shared/imgs/problem-section/ghost-shop.png" alt="Loja fechada - fornecedor invisível">
-            </div>
-        </div>
-
-        <div class="problem-cards">
-            <div class="problem-card">
-                <i class="fa-solid fa-eye-slash problem-card-icon"></i>
-                <h3 class="problem-card-title">Mais de 250 mil fornecedores ainda estão fora do digital</h3>
-                <p class="problem-card-description">Isso representa metade do mercado brasileiro</p>
-                <span class="problem-card-source">Fonte: CGLbr, Anamaco</span>
-            </div>
-            <div class="problem-card">
-                <i class="fa-solid fa-magnifying-glass problem-card-icon"></i>
-                <h3 class="problem-card-title">Metade das construtoras ainda busca fornecedores manualmente</h3>
-                <p class="problem-card-description">Sem uma plataforma centralizada</p>
-                <span class="problem-card-source">Fonte: Sebrae, Anamaco</span>
-            </div>
-            <div class="problem-card">
-                <i class="fa-solid fa-cubes problem-card-icon"></i>
-                <h3 class="problem-card-title">+500 mil fornecedores no Brasil agindo de forma desorganizada</h3>
-                <p class="problem-card-description">Mercado altamente fragmentado</p>
-                <span class="problem-card-source">Fonte: IBGE</span>
-            </div>
-            <div class="problem-card">
-                <i class="fa-solid fa-bullseye problem-card-icon"></i>
-                <h3 class="problem-card-title">Um mercado de R$ 96 Bi ainda opera com ineficiência estrutural</h3>
-                <p class="problem-card-description">As conexões comerciais não acompanham o tamanho do mercado.</p>
-                <span class="problem-card-source">Fonte: IBGE, FGV</span>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <section class="market" id="mercado">
-        <div class="section-title">
-            <h2>O Mercado</h2>
-            <p>Mercado que não para de crescer</p>
+    <!-- Problem -->
+    <div id="problema" class="section-anchor" aria-hidden="true"></div>
+    <section class="problem-section section" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="eyebrow">O cenário atual</span>
+          <h2 class="section-title" id="problem-title">Hoje, cada cotação passa por ferramentas diferentes</h2>
+          <p class="section-intro">Em muitas empresas, a busca por fornecedores, o envio dos pedidos, o recebimento das
+            respostas e a comparação das propostas ficam espalhados entre canais que não conversam entre si.</p>
         </div>
 
-        <div class="market-cards">
-            <div class="market-card">
-                <div class="card-section">
-                    <img src="shared/imgs/house.png" alt="Image House">
-                    <div>
-                        <p>+500 mil fornecedoras</p>
-                    </div>
-                </div>
-                <div class="card-section card-section-white">
-                    <img src="shared/imgs/coins.png" alt="Image House">
-                    <div>
-                        <p>+R$ 96 bilhões em consumo anual de materiais</p>
-                    </div>
-                </div>
-            </div>
-            <div class="market-card">
-                <div class="card-section">
-                    <img src="shared/imgs/crane.png" alt="Image House">
-                    <div>
-                        <p>+165 mil empresas da construção civil</p>
-                    </div>
-                </div>
-                <div class="card-section card-section-white">
-                    <img src="shared/imgs/money.png" alt="Image House">
-                    <div>
-                        <p>R$ 482 bilhões gastos em obras e serviços</p>
-                    </div>
-                </div>
-            </div>
+        <div class="problem-visual reveal">
+          <img src="shared/imgs/art_many_tools.webp"
+            alt="Diagrama do processo de cotação fragmentado entre WhatsApp, Google, Instagram, e-mail, planilhas, pastas e indicações"
+            class="problem-visual__image" width="640" height="640" loading="lazy">
         </div>
 
-        <p class="fonts">
-            <span>Fontes:</span>
-            IBGE - PAIC (Pesquisa Anual da Indústria da Construção 2023) • Enconodata - levantamento por palavra-chave
-            “materiais de construção”
-        </p>
+        <div class="pain-points-header reveal">
+          <span class="pain-points-header__eyebrow">Problemas identificados</span>
+          <h3 class="pain-points-header__title">Dores recorrentes no processo de cotação da construção civil</h3>
+          <p class="pain-points-header__text">Conversas com construtoras, incorporadoras e profissionais de compras
+            revelaram dificuldades práticas que se repetem em obras de diferentes portes — da busca por fornecedores
+            à comparação das propostas recebidas.</p>
+        </div>
 
+        <div class="pain-points-grid" role="list" aria-label="Problemas identificados no processo de cotação">
+          <article class="pain-point-card reveal" tabindex="0" role="listitem">
+            <span class="pain-point-card__label">Problema identificado</span>
+            <h3 class="pain-point-card__title">Encontrar fornecedores compatíveis</h3>
+            <p class="pain-point-card__text">A busca é manual e espalhada, sem filtros centralizados por material, região, prazo, frete ou especialidade.</p>
+          </article>
+          <article class="pain-point-card reveal" tabindex="0" role="listitem">
+            <span class="pain-point-card__label">Problema identificado</span>
+            <h3 class="pain-point-card__title">Repetir pedidos de orçamento</h3>
+            <p class="pain-point-card__text">A mesma solicitação precisa ser enviada individualmente para diferentes fornecedores e canais.</p>
+          </article>
+          <article class="pain-point-card reveal" tabindex="0" role="listitem">
+            <span class="pain-point-card__label">Problema identificado</span>
+            <h3 class="pain-point-card__title">Organizar respostas manualmente</h3>
+            <p class="pain-point-card__text">PDFs, fotos, mensagens e planilhas exigem conferência e reorganização antes da comparação.</p>
+          </article>
+          <article class="pain-point-card reveal" tabindex="0" role="listitem">
+            <span class="pain-point-card__label">Problema identificado</span>
+            <h3 class="pain-point-card__title">Recuperar o histórico de compras</h3>
+            <p class="pain-point-card__text">Cotações antigas ficam dispersas por obra, material, fornecedor e ferramenta.</p>
+          </article>
+          <article class="pain-point-card reveal" tabindex="0" role="listitem">
+            <span class="pain-point-card__label">Problema identificado</span>
+            <h3 class="pain-point-card__title">Avaliar a confiabilidade</h3>
+            <p class="pain-point-card__text">A verificação de novos fornecedores depende de indicações, experiência anterior e pesquisa manual.</p>
+          </article>
+          <article class="pain-point-card reveal" tabindex="0" role="listitem">
+            <span class="pain-point-card__label">Problema identificado</span>
+            <h3 class="pain-point-card__title">Reduzir tarefas repetitivas</h3>
+            <p class="pain-point-card__text">A equipe gasta tempo buscando contatos, reenviando pedidos, acompanhando respostas e montando comparativos.</p>
+          </article>
+        </div>
+
+        <p class="section-closing section-heading--center reveal" style="text-align:center; max-width:640px; margin:48px auto 0;">O resultado é mais tempo operacional, menos rastreabilidade e maior risco de erros e retrabalho.</p>
+      </div>
     </section>
 
-    <section class="about-section" id="sobre">
-        <div class="about-container">
-            <div class="about-content">
-                <h2 class="about-title">Sobre a Fornex</h2>
-                <p class="about-subtitle">Conectamos construtoras e fornecedoras de forma inteligente</p>
-                <p class="about-text">A Fornex conecta construtoras que enfrentam dificuldade para encontrar
-                    fornecedores confiáveis com empresas que precisam de mais visibilidade no mercado digital. Busque,
-                    avalie e conecte-se com fornecedores confiáveis na construção civil.</p>
-
-                <div class="about-features">
-                    <div class="about-feature">
-                        <img src="shared/imgs/about-section/small-time-icon.png" alt="Ícone de tempo"
-                            class="about-feature-icon">
-                        <div class="about-feature-content">
-                            <h3 class="about-feature-title">Para construtoras</h3>
-                            <ul class="about-feature-list">
-                                <li>Reduzimos o tempo perdido em buscas manuais</li>
-                                <li>Diminuímos riscos na escolha</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="about-feature">
-                        <img src="shared/imgs/about-section/small-graph-icon.png" alt="Ícone de crescimento"
-                            class="about-feature-icon">
-                        <div class="about-feature-content">
-                            <h3 class="about-feature-title">Para fornecedoras</h3>
-                            <ul class="about-feature-list">
-                                <li>Aumentamos visibilidade e presença digital</li>
-                                <li>Criamos oportunidades de negócios</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about-image">
-                <img src="shared/imgs/about-section/search-page-example.jpg" alt="Exemplo de página de busca da Fornex">
-            </div>
+    <!-- Solution -->
+    <div id="solucao" class="section-anchor" aria-hidden="true"></div>
+    <section class="solution-section section" aria-labelledby="solution-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow eyebrow--orange">A proposta da Fornex</span>
+          <h2 class="section-title" id="solution-title">Todo o ciclo de cotação conectado em um só lugar</h2>
+          <p class="section-intro">Em vez de alternar entre várias ferramentas, a construtora poderá concentrar o fluxo de cotação em um ambiente desenvolvido para as necessidades da construção civil.</p>
+          <p class="solution-highlight">Com a Fornex, cada etapa se conecta ao mesmo processo.</p>
+          <p class="solution-clarification">A plataforma organiza as informações para apoiar a análise. A decisão de compra continua sendo da equipe responsável.</p>
         </div>
+
+        <div class="central-diagram reveal diagram-animate" aria-hidden="true">
+          <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="200" cy="100" r="40" fill="#FF5714" />
+            <text x="200" y="105" text-anchor="middle" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">FORNEX</text>
+            <line x1="160" y1="100" x2="60" y2="100" stroke="#FF5714" stroke-width="2" />
+            <line x1="200" y1="60" x2="200" y2="20" stroke="#FF5714" stroke-width="2" />
+            <line x1="240" y1="100" x2="340" y2="100" stroke="#FF5714" stroke-width="2" />
+            <line x1="200" y1="140" x2="200" y2="180" stroke="#FF5714" stroke-width="2" />
+            <line x1="172" y1="72" x2="100" y2="30" stroke="#FF5714" stroke-width="2" />
+            <line x1="228" y1="72" x2="300" y2="30" stroke="#FF5714" stroke-width="2" />
+            <line x1="172" y1="128" x2="100" y2="170" stroke="#FF5714" stroke-width="2" />
+            <line x1="228" y1="128" x2="300" y2="170" stroke="#FF5714" stroke-width="2" />
+          </svg>
+        </div>
+
+        <ul class="connected-list reveal">
+          <li class="connected-list__item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Busca de fornecedores
+          </li>
+          <li class="connected-list__item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Solicitações de orçamento
+          </li>
+          <li class="connected-list__item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Acompanhamento de respostas
+          </li>
+          <li class="connected-list__item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Recebimento de propostas
+          </li>
+          <li class="connected-list__item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Padronização com IA
+          </li>
+          <li class="connected-list__item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Comparação de informações
+          </li>
+          <li class="connected-list__item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Histórico e documentos
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="how-works" id="como-funciona">
-        <div class="section-title">
-            <h2>Como irá funcionar</h2>
-            <p>A forma mais eficiente de contratar fornecedores</p>
+    <!-- Features -->
+    <div id="funcionalidades" class="section-anchor" aria-hidden="true"></div>
+    <section class="features-section section" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="eyebrow">Funcionalidades planejadas</span>
+          <h2 class="section-title" id="features-title">Menos tarefas espalhadas. Mais controle sobre cada cotação.</h2>
+          <p class="section-intro">A Fornex foi pensada para acompanhar o processo desde a busca por fornecedores até a organização do histórico de compra.</p>
         </div>
-        <div class="how-works-cards">
-            <div class="how-works-card">
-                <div class="how-works-number">1</div>
-                <i class="fa-solid fa-boxes-stacked how-works-card-icon"></i>
-                <h3 class="how-works-card-title">Fornecedora cadastra seus produtos</h3>
-                <div class="how-works-card-description">
-                    <p>O fornecedor se cadastra e informa os produtos ou categorias
-                        com que trabalha.</p>
-                    <p><strong>Exemplo:</strong> Tijolos (cerâmico, de cimento, etc.) e Madeiras
-                        (bruta, tratada, etc.).</p>
-                </div>
-            </div>
-            <div class="how-works-card">
-                <div class="how-works-number">2</div>
-                <i class="fa-solid fa-magnifying-glass how-works-card-icon"></i>
-                <h3 class="how-works-card-title">Construtora pesquisa e encontra fornecedores</h3>
-                <div class="how-works-card-description">
-                    <p>A construtora pesquisa o material necessário e encontra os fornecedores mais bem avaliados.</p>
-                    <p><strong>Exemplo:</strong> Ao pesquisar “madeira tratada”, aparecem fornecedores especializados
-                        nesse material.</p>
-                </div>
-            </div>
-            <div class="how-works-card">
-                <div class="how-works-number">3</div>
 
-                <i class="fa-solid fa-file-invoice-dollar how-works-card-icon"></i>
-                <h3 class="how-works-card-title">Solicita orçamentos</h3>
-                <div class="how-works-card-description">
-                    <p>A construtora solicita orçamentos e recebe propostas dos fornecedores.</p>
-                    <p><strong>Exemplo:</strong> Solicita 500 tijolos cerâmicos e recebe diferentes cotações para
-                        comparar.</p>
-                </div>
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <button class="feature-card__header" type="button" aria-expanded="false">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/></svg>
+              <div>
+                <h3 class="feature-card__title">Um pedido para vários fornecedores</h3>
+                <p class="feature-card__summary">Criar uma solicitação uma única vez e enviá-la a múltiplos fornecedores, sem expor os participantes entre si.</p>
+              </div>
+              <svg class="feature-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="feature-card__body">
+              <ul class="feature-card__details">
+                <li>Acompanhar status como enviado, respondido e pendente.</li>
+                <li>Manter o histórico do pedido centralizado.</li>
+                <li>Reduzir o esforço de copiar, colar e acompanhar mensagens separadas.</li>
+              </ul>
             </div>
-            <div class="how-works-card">
-                <div class="how-works-number">4</div>
-                <i class="fa-solid fa-handshake how-works-card-icon"></i>
-                <h3 class="how-works-card-title">Negócio fechado</h3>
-                <div class="how-works-card-description">
-                    <p>A construtora seleciona uma proposta e entra em contato direto com o fornecedor para concluir a
-                        negociação.</p>
-                    <p><strong>Exemplo:</strong> Escolhe a melhor cotação e combina os detalhes com o fornecedor.</p>
-                </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <button class="feature-card__header" type="button" aria-expanded="false">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 3v18"/><path d="M3 12h18"/></svg>
+              <div>
+                <h3 class="feature-card__title">Propostas comparáveis em um só lugar</h3>
+                <p class="feature-card__summary">Usar IA para ler e estruturar dados de propostas recebidas em formatos diferentes.</p>
+              </div>
+              <svg class="feature-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="feature-card__body">
+              <ul class="feature-card__details">
+                <li>Organizar preço, prazo, frete e condições comerciais.</li>
+                <li>Apresentar as informações em uma visualização padronizada.</li>
+                <li>Evitar a reconstrução manual de planilhas comparativas.</li>
+              </ul>
+              <p class="feature-card__disclaimer">A IA organiza as informações; ela não escolhe a proposta vencedora.</p>
             </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <button class="feature-card__header" type="button" aria-expanded="false">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="m11 8-3 3 3 3"/></svg>
+              <div>
+                <h3 class="feature-card__title">Busca mais relevante de fornecedores</h3>
+                <p class="feature-card__summary">Encontrar fornecedores com filtros coerentes com a demanda da obra.</p>
+              </div>
+              <svg class="feature-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="feature-card__body">
+              <ul class="feature-card__details">
+                <li>Filtrar por região, material e especialidade.</li>
+                <li>Considerar frete e raio de atendimento.</li>
+                <li>Navegar por fornecedores organizados por categoria.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <button class="feature-card__header" type="button" aria-expanded="false">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>
+              <div>
+                <h3 class="feature-card__title">Histórico pesquisável</h3>
+                <p class="feature-card__summary">Construir uma memória operacional das cotações e aprovações da empresa.</p>
+              </div>
+              <svg class="feature-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="feature-card__body">
+              <ul class="feature-card__details">
+                <li>Consultar por obra, material e fornecedor.</li>
+                <li>Pesquisar por data, cidade, preço e status.</li>
+                <li>Reduzir a dependência de mensagens, pastas e memória da equipe.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <button class="feature-card__header" type="button" aria-expanded="false">
+              <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+              <div>
+                <h3 class="feature-card__title">Orçamentos organizados por fase da obra</h3>
+                <p class="feature-card__summary">Relacionar cotações a obras, categorias, fornecedores e etapas de execução.</p>
+              </div>
+              <svg class="feature-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="feature-card__body">
+              <ul class="feature-card__details">
+                <li>Visualizar valor planejado e valor gasto.</li>
+                <li>Registrar prazo previsto e status da fase.</li>
+                <li>Acompanhar histórico de orçamentos e evolução dos custos.</li>
+              </ul>
+            </div>
+          </article>
         </div>
+
+        <p class="section-closing section-heading--center reveal" style="text-align:center; max-width:720px; margin:48px auto 0;">Essas são algumas das funcionalidades planejadas para a Fornex. A solução será evoluída junto às necessidades do mercado.</p>
+      </div>
     </section>
 
-    <section class="investor-cta-section" id="investor-cta" aria-labelledby="investor-cta-heading">
-        <div class="section-title">
-            <h2 id="investor-cta-heading">Para investidores</h2>
-            <p class="investor-cta-description">Modelo de negócio, projeções e validação do problema com entrevistas.</p>
+    <!-- Validation -->
+    <div id="validacao" class="section-anchor" aria-hidden="true"></div>
+    <section class="validation-section section" aria-labelledby="validation-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="eyebrow">Validação com o mercado</span>
+          <h2 class="section-title" id="validation-title">Conversamos com quem vive esse processo na prática</h2>
+          <p class="section-intro">A validação inicial reuniu construtoras, incorporadoras e profissionais envolvidos em compras e orçamentos para entender como buscam fornecedores, solicitam cotações e organizam as respostas.</p>
         </div>
-        <a href="investidores.html" class="btn-primary">Informações para investidores</a>
+
+        <div class="validation-journey reveal">
+          <div class="journey-step">
+            <span class="journey-step__number">1</span>
+            <p class="journey-step__text">Empresas e profissionais entrevistados</p>
+          </div>
+          <div class="journey-step">
+            <span class="journey-step__number">2</span>
+            <p class="journey-step__text">Dores recorrentes surgindo de diferentes rotinas</p>
+          </div>
+          <div class="journey-step">
+            <span class="journey-step__number">3</span>
+            <p class="journey-step__text">Dores convergindo para um único fluxo fragmentado</p>
+          </div>
+          <div class="journey-step">
+            <span class="journey-step__number">4</span>
+            <p class="journey-step__text">Princípios da Fornex conectados às dores identificadas</p>
+          </div>
+        </div>
+
+        <p class="reveal" style="text-align:center; font-weight:600; margin-bottom:8px;">Entre as empresas entrevistadas estão:</p>
+        <div class="companies-list reveal">
+          <span class="companies-list__item">CMS Construtora</span>
+          <span class="companies-list__item">Aquino Incorporações</span>
+          <span class="companies-list__item">HE Martins</span>
+          <span class="companies-list__item">RC Negócios Imobiliários</span>
+          <span class="companies-list__item">RC Engenharia</span>
+          <span class="companies-list__item">Haka Construtora</span>
+        </div>
+
+        <p class="validation-note reveal">A validação apresentada considera entrevistas com construtoras. A validação com fornecedores ainda deve ser tratada como uma próxima etapa.</p>
+
+        <ul class="findings-list reveal">
+          <li class="findings-list__item">A busca acontece em Google, Instagram, WhatsApp, indicações, contatos antigos e feiras.</li>
+          <li class="findings-list__item">As empresas costumam solicitar de 3 a 6 orçamentos por material ou serviço.</li>
+          <li class="findings-list__item">O envio da mesma solicitação é repetitivo e o acompanhamento das respostas é manual.</li>
+          <li class="findings-list__item">As propostas chegam em PDF, foto, print, mensagem e planilha.</li>
+          <li class="findings-list__item">A comparação depende de Excel, Notion, pastas e outros controles próprios.</li>
+          <li class="findings-list__item">Perda de planilhas, informações incompletas e propostas fora de ordem geram retrabalho.</li>
+          <li class="findings-list__item">A confiabilidade de novos fornecedores exige pesquisa adicional.</li>
+        </ul>
+
+        <blockquote class="validation-quote reveal">Conversamos com o mercado antes de construir a solução. O problema não está apenas em encontrar fornecedores, mas em gerenciar todo o ciclo de cotação de forma organizada, confiável e eficiente.</blockquote>
+      </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-container">
-                <div class="footer-brand">
-                    <img src="shared/imgs/Frame_21_orange 1.png" alt="Logo Fornex" class="footer-logo">
-                    <p class="footer-description">Conectamos construtoras e fornecedores de materiais com agilidade,
-                        transparência e segurança</p>
-                    <div class="footer-info">
-                        <div class="footer-info-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Brasil</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-links">
-                    <h3 class="footer-section-title">Links úteis</h3>
-                    <ul class="footer-list">
-                        <li><a href="#home"><i class="fa-solid fa-house"></i> Página inicial</a></li>
-                        <li><a href="#sobre"><i class="fa-solid fa-info-circle"></i> Sobre a Fornex</a></li>
-                        <li><a href="#como-funciona"><i class="fa-solid fa-gears"></i> Como Funciona</a></li>
-                        <li><a href="investidores.html"><i class="fa-solid fa-chart-line"></i> Informações para investidores</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-support">
-                    <h3 class="footer-section-title">Entre em contato</h3>
-                    <ul class="footer-list">
-                        <li><a href="https://wa.me/5548992069010" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i> (48) 99206-9010</a></li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Recognition -->
+    <div id="reconhecimento" class="section-anchor" aria-hidden="true"></div>
+    <section class="recognition-section section" aria-labelledby="recognition-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Reconhecimento</span>
+          <h2 class="section-title" id="recognition-title">Antes de se tornar uma plataforma, a Fornex já era uma ideia reconhecida.</h2>
+          <p class="section-intro">A Fornex conquistou o 1º lugar na Região Sul do Sebrae Supernova 2025. O reconhecimento reforça o potencial da proposta e sua conexão com um problema real do mercado.</p>
         </div>
 
-        <div class="footer-bottom">
-            <div class="footer-container">
-                <p class="footer-copyright"></p>
-                <p class="footer-tagline">Construindo conexões fortes para grandes projetos.</p>
-            </div>
-        </div>
-    </footer>
+        <div class="recognition-showcase reveal">
+          <div class="recognition-art">
+            <img src="shared/imgs/art_sebrae_supernova.webp"
+              alt="1º lugar na Região Sul do Sebrae Supernova 2025"
+              class="recognition-art__image" width="640" height="400" loading="lazy">
+          </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts/footer.js"></script>
+          <div class="recognition-journey">
+            <div class="recognition-journey__intro">
+              <h3 class="recognition-journey__title">Como chegamos até aqui</h3>
+              <p class="recognition-journey__text">Antes do reconhecimento no Sebrae Supernova, a Fornex percorreu
+                quatro etapas que conectaram o problema real do mercado à solução em construção.</p>
+            </div>
+
+            <ul class="recognition-milestones" aria-label="Linha da jornada da Fornex">
+              <li class="recognition-milestone">
+                <span class="recognition-milestone__number" aria-hidden="true">1</span>
+                <span class="recognition-milestone__text">Problema identificado</span>
+              </li>
+              <li class="recognition-milestone">
+                <span class="recognition-milestone__number" aria-hidden="true">2</span>
+                <span class="recognition-milestone__text">Mercado ouvido</span>
+              </li>
+              <li class="recognition-milestone">
+                <span class="recognition-milestone__number" aria-hidden="true">3</span>
+                <span class="recognition-milestone__text">Ideia reconhecida</span>
+              </li>
+              <li class="recognition-milestone">
+                <span class="recognition-milestone__number" aria-hidden="true">4</span>
+                <span class="recognition-milestone__text">Solução em desenvolvimento</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <div id="cadastro" class="section-anchor" aria-hidden="true"></div>
+    <section class="final-cta-section section" aria-labelledby="final-cta-title">
+      <div class="container reveal">
+        <h2 class="section-title" id="final-cta-title">Ajude a construir uma nova forma de cotar na construção civil</h2>
+        <p class="section-intro">Registre seu interesse e acompanhe a evolução da Fornex desde as primeiras etapas.</p>
+        <div class="btn-group btn-group--stack">
+          <a class="btn btn-primary"
+            href="https://docs.google.com/forms/d/1KFNcURXurGxkmOmbZhcmV2wtgbuQHsO9CJBOqynQ75Y/viewform"
+            target="_blank" rel="noopener noreferrer">Cadastrar minha construtora</a>
+          <a class="btn btn-outline"
+            href="https://docs.google.com/forms/d/1VTUe161rTqBNPD-RwNwC976np0qFQpJ3BPXqv5guExA/viewform"
+            target="_blank" rel="noopener noreferrer">Cadastrar como fornecedor</a>
+        </div>
+        <p class="privacy-microcopy">O cadastro é apenas uma manifestação de interesse e não cria compromisso comercial.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="rodape">
+    <div class="footer-top">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img src="shared/imgs/logo.svg" alt="Fornex" class="footer-logo" width="160" height="40">
+          <p class="footer-description">Plataforma em desenvolvimento para centralizar busca, envio e organização de cotações na construção civil.</p>
+          <div class="footer-info">
+            <div class="footer-info-item">
+              <svg width="16" height="16" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+              <span>Brasil</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3 class="footer-section-title">Links úteis</h3>
+          <ul class="footer-list">
+            <li><a href="#inicio"><svg width="16" height="16" viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> Página inicial</a></li>
+            <li><a href="#problema"><svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg> O problema</a></li>
+            <li><a href="#solucao"><svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M463.5 0c4.6 0 8.9 2.3 11.4 6.1l29.6 47L498 6.3c2.6-3.9 6.9-6.3 11.5-6.3H524c13.3 0 24 10.7 24 24v464c0 13.3-10.7 24-24 24H388c-11.5 0-22.1-6.2-27.7-16.1l-32-58.1-32 58.1c-5.6 9.9-16.2 16.1-27.7 16.1H256c-13.3 0-24-10.7-24-24V24c0-13.3 10.7-24 24-24h56.5c4.6 0 8.9 2.3 11.4 6.1l29.6 47 29.6-47c2.5-3.8 6.8-6.1 11.4-6.1H463.5z"/></svg> A solução</a></li>
+            <li><a href="#funcionalidades"><svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M495.9 166.6c3.2 8.7 5 18.4 5 28.7c0 38.7-27.5 71-64 78.4V480c0 17.7-14.3 32-32 32H112c-17.7 0-32-14.3-32-32V273.1c-36.5-7.4-64-39.7-64-78.4c0-10.3 1.8-20 5-28.7L48.6 35.4C55.3 14.3 74.9 0 97.2 0H414.8c22.3 0 41.9 14.3 48.6 35.4L495.9 166.6zM111.6 64h288.8L384 160H128L111.6 64z"/></svg> Funcionalidades</a></li>
+            <li><a href="#validacao"><svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm57.4-338.3c9.8 8.8 10.7 23.9 1.9 33.7L247 312.4c-4.8 5.4-11.7 8.5-18.9 8.5s-14.1-3.1-18.9-8.5l-56-62.8c-8.8-9.8-8-24.9 1.9-33.7s24.9-8 33.7 1.9l37.1 41.6 99.6-110.5c8.8-9.8 23.9-10.7 33.7-1.9z"/></svg> Validação</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-support">
+          <h3 class="footer-section-title">Entre em contato</h3>
+          <ul class="footer-list">
+            <li><a href="tel:+5548992069010"><svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96.4-40.1c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L203.3 167c13.7-11.2 18.4-30 11.6-46.3l-40.1-96.4z"/></svg> (48) 99206-9010</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <p class="footer-copyright"></p>
+        <p class="footer-tagline">Organizando o ciclo de cotação na construção civil.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared/js/content.js"></script>
+  <script src="shared/js/header.js"></script>
+  <script src="shared/js/interactions.js"></script>
+  <script src="shared/js/footer.js"></script>
 </body>
 
 </html>

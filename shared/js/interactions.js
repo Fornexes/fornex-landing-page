@@ -23,23 +23,20 @@
     });
   }
 
-  // Feature accordions (mobile)
-  document.querySelectorAll(".feature-card__header").forEach(function (button) {
-    button.addEventListener("click", function () {
+  // Platform feature cards (mobile tap)
+  document.querySelectorAll(".platform-feature").forEach(function (feature) {
+    feature.addEventListener("click", function () {
       if (window.innerWidth >= 1024) return;
 
-      const card = button.closest(".feature-card");
-      const isExpanded = card.classList.contains("is-expanded");
+      const isActive = feature.classList.contains("is-active");
 
-      document.querySelectorAll(".feature-card.is-expanded").forEach(function (other) {
-        if (other !== card) {
-          other.classList.remove("is-expanded");
-          other.querySelector(".feature-card__header").setAttribute("aria-expanded", "false");
+      document.querySelectorAll(".platform-feature.is-active").forEach(function (other) {
+        if (other !== feature) {
+          other.classList.remove("is-active");
         }
       });
 
-      card.classList.toggle("is-expanded", !isExpanded);
-      button.setAttribute("aria-expanded", String(!isExpanded));
+      feature.classList.toggle("is-active", !isActive);
     });
   });
 

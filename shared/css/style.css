@@ -13,6 +13,7 @@
   --color-gray-medium: #7a7a7a;
   --color-gray-dark: #2a2a2a;
   --color-problem-accent: #ff0037;
+  --color-solution-accent: #16a34a;
   --font-heading: "Poppins", "Montserrat", sans-serif;
   --font-body: "Inter", "Nunito Sans", sans-serif;
   --max-width: 1280px;
@@ -22,8 +23,8 @@
   --radius-card: 18px;
   --shadow-card: 0 12px 30px rgba(0, 0, 0, 0.06);
   --shadow-hover: 0 18px 40px rgba(42, 42, 42, 0.1);
-  --section-padding-desktop: clamp(96px, 10vw, 140px);
-  --section-padding-mobile: 64px;
+  --section-padding-desktop: clamp(48px, 5vw, 70px);
+  --section-padding-mobile: 32px;
   --container-padding-desktop: 48px;
   --container-padding-tablet: 32px;
   --container-padding-mobile: 20px;
@@ -167,7 +168,7 @@ ul {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--color-tertiary);
+  color: var(--color-primary);
 }
 
 .eyebrow--orange {

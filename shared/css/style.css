@@ -23,8 +23,8 @@
   --radius-card: 18px;
   --shadow-card: 0 12px 30px rgba(0, 0, 0, 0.06);
   --shadow-hover: 0 18px 40px rgba(42, 42, 42, 0.1);
-  --section-padding-desktop: clamp(48px, 5vw, 70px);
-  --section-padding-mobile: 32px;
+  --section-padding-desktop: clamp(24px, 2.5vw, 35px);
+  --section-padding-mobile: 16px;
   --container-padding-desktop: 48px;
   --container-padding-tablet: 32px;
   --container-padding-mobile: 20px;

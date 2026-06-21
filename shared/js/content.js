@@ -11,8 +11,7 @@ window.FORNEX_CONTENT = {
   navigation: [
     { label: "O problema", target: "#problema" },
     { label: "A solução", target: "#solucao" },
-    { label: "Funcionalidades", target: "#funcionalidades" },
-    { label: "Validação", target: "#validacao" }
+    { label: "Funcionalidades", target: "#funcionalidades" }
   ],
   footer: {
     description: "Plataforma em desenvolvimento para centralizar busca, envio e organização de cotações na construção civil.",
